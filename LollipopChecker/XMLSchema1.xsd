@@ -1,0 +1,33 @@
+﻿<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="auth_model_check">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="result"/>
+              <xs:element type="xs:long" name="esn"/>
+              <xs:element type="xs:string" name="model"/>
+              <xs:element type="xs:string" name="suffix"/>
+              <xs:element type="xs:string" name="msn"/>
+              <xs:element type="xs:string" name="esn_date"/>
+              <xs:element type="xs:string" name="sw_version"/>
+              <xs:element type="xs:anyURI" name="sw_url"/>
+              <xs:element type="xs:string" name="sw_locale_url"/>
+              <xs:element type="xs:string" name="sw_recommand_uri"/>
+              <xs:element type="xs:string" name="app_version"/>
+              <xs:element type="xs:string" name="app_url"/>
+              <xs:element type="xs:string" name="cs_em_flag"/>
+              <xs:element type="xs:string" name="cs_em_uri"/>
+              <xs:element type="xs:string" name="chip_type"/>
+              <xs:element type="xs:string" name="prod_type"/>
+              <xs:element type="xs:string" name="buyer"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="req_cmd"/>
+      <xs:attribute type="xs:string" name="status"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

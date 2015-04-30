@@ -17,7 +17,7 @@ namespace LollipopChecker
     public partial class LollipopCheckerForm : Form
     {
 
-        String IMEI = "";   // Insert your IMEI number here!
+        String IMEI = "357246057481085";   // Insert your IMEI number here!
         string harviellerinte = "";
         BackgroundWorker m_oWorker;
 
